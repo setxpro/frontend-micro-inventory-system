@@ -7,8 +7,8 @@ const Header: React.FC = () => {
   return (
     <C.Container>
         <Button text='Home'link="/"/>
-        <Button text='Add Providers'link="/add-products"/>
-        <Button text='Add Products'link="/add-providers"/>
+        <Button text='Add Providers'link="/add-providers"/>
+        <Button text='Add Products'link="/add-products"/>
     </C.Container>
   );
 }
