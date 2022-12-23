@@ -42,6 +42,9 @@ const ProductsItemsTable = () => {
                 <td>
                     <button>EDIT</button>
                 </td>
+                <td>
+                    <button>DEL</button>
+                </td>
             </tr>
         ))}
         

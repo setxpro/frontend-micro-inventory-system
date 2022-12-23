@@ -1,4 +1,5 @@
 import React from 'react';
+import FormToCreateProvider from '../../Components/Form/FormToCreateProvider';
 import ProvidersItems from '../../Components/Tables/ProvidersItems';
 import Table from '../../Components/Tables/Table';
 import TheadProvider from '../../Components/Tables/TheadProvider';
@@ -11,7 +12,9 @@ const CreateProvider: React.FC = () => {
     <C.Container>
         <TitlePage title='Add Providers'/>
         <C.ContentFormArea>
-          <C.ContentLeftForm>...</C.ContentLeftForm>
+          <C.ContentLeftForm>
+            <FormToCreateProvider/>
+          </C.ContentLeftForm>
           <C.ContentRightTable>
             <Table theadArea={<TheadProvider/>} tbodyArea={<ProvidersItems/> } />
           </C.ContentRightTable>
