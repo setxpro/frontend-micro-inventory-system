@@ -19,17 +19,4 @@ export const ContentLeftForm = styled.div`
 export const ContentRightTable = styled.div`
     width: 70%;
     height: 100%;
-
-    table {
-        width: 100%;
-        thead {
-            tr {
-
-                th {
-                    background: lightcoral;
-                    padding: 0.5rem;
-                }
-            }
-        }
-    }
 `;

@@ -3,34 +3,22 @@ import ProductsItemsTable from '../../Components/Tables/ProductsItemsTable';
 import TitlePage from '../../Components/TitlePage';
 
 import * as C from './styles';
+import FormToCreateProduct from '../../Components/Form/FormToCreateProduct';
+import TheadProducts from '../../Components/Tables/TheadProducts';
+import Table from '../../Components/Tables/Table';
 
 const CreateProduct: React.FC = () => {
+
   return (
     <C.Container>
        <C.Container>
         <TitlePage title='Add Products'/>
         <C.ContentFormArea>
-          <C.ContentLeftForm>...</C.ContentLeftForm>
+          <C.ContentLeftForm>
+            <FormToCreateProduct/>
+          </C.ContentLeftForm>
           <C.ContentRightTable>
-          <table>
-            <thead>
-              <tr>
-                <th>
-                  Name
-                </th>
-                <th>
-                  Price
-                </th>
-                <th>
-                  Stock
-                </th>
-                <th>
-                  Actions
-                </th>
-              </tr>
-              </thead>
-              <ProductsItemsTable/>
-          </table>
+          <Table theadArea={<TheadProducts/>} tbodyArea={<ProductsItemsTable/>}/>
           </C.ContentRightTable>
         </C.ContentFormArea>
     </C.Container>

@@ -1,5 +1,7 @@
 import React from 'react';
 import ProvidersItems from '../../Components/Tables/ProvidersItems';
+import Table from '../../Components/Tables/Table';
+import TheadProvider from '../../Components/Tables/TheadProvider';
 import TitlePage from '../../Components/TitlePage';
 
 import * as C from './styles';
@@ -11,22 +13,7 @@ const CreateProvider: React.FC = () => {
         <C.ContentFormArea>
           <C.ContentLeftForm>...</C.ContentLeftForm>
           <C.ContentRightTable>
-          <table>
-            <thead>
-              <tr>
-                <th>
-                  Name
-                </th>
-                <th>
-                  Number
-                </th>
-                <th>
-                  Actions
-                </th>
-              </tr>
-              </thead>
-              <ProvidersItems/>
-          </table>
+            <Table theadArea={<TheadProvider/>} tbodyArea={<ProvidersItems/> } />
           </C.ContentRightTable>
         </C.ContentFormArea>
     </C.Container>
